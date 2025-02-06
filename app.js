@@ -62,9 +62,9 @@ function renderEntries(filter = "all") {
   });
 
   const netBalance = totalIncome - totalExpense;
-  document.getElementById('totalIncome').innerText = `₹${totalIncome}`;
-document.getElementById('totalExpense').innerText = `₹${totalExpense}`;
-document.getElementById('netBalance').innerText = `₹${netBalance}`;
+  document.getElementById('totalIncome').innerText = `₹{totalIncome}`;
+document.getElementById('totalExpense').innerText = `₹{totalExpense}`;
+document.getElementById('netBalance').innerText = `₹{netBalance}`;
 
 }
 
