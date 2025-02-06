@@ -8,22 +8,22 @@
 </head>
 <body class="bg-gray-100">
 
-  <div class="container">
+  <div class="container max-w-lg mx-auto p-6 bg-white rounded shadow-lg mt-10">
     <h1 class="text-2xl font-bold text-center mb-6">Income Expense Calculator</h1>
 
     <!-- Input Form -->
     <div class="mb-6">
       <input id="description" type="text" class="input-field" placeholder="Description">
       <input id="amount" type="number" class="input-field" placeholder="Amount">
-      <div class="flex space-x-4">
-        <label>
+      <div class="flex flex-wrap justify-start space-x-4 mb-4">
+        <label class="flex items-center">
           <input type="radio" name="type" value="income" class="mr-2"> Income
         </label>
-        <label>
+        <label class="flex items-center">
           <input type="radio" name="type" value="expense" class="mr-2"> Expense
         </label>
       </div>
-      <button id="addButton" class="button">Add Entry</button>
+      <button id="addButton" class="button mb-2">Add Entry</button>
       <button id="resetButton" class="button reset">Reset</button>
     </div>
 
@@ -43,9 +43,9 @@
 
     <!-- Totals -->
     <div class="total text-center mb-6">
-      <p>Total Income: $<span id="totalIncome">0</span></p>
-      <p>Total Expenses: $<span id="totalExpense">0</span></p>
-      <p>Net Balance: $<span id="netBalance">0</span></p>
+      <p>Total Income: <span id="totalIncome">₹0</span></p>
+      <p>Total Expenses: <span id="totalExpense">₹0</span></p>
+      <p>Net Balance: <span id="netBalance">₹0</span></p>
     </div>
 
     <!-- Entries List -->
