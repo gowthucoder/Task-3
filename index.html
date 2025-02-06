@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Expense Calculator</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+  <div class="container">
+    <h1 class="text-2xl font-bold text-center mb-6">Income Expense Calculator</h1>
+
+    <!-- Input Form -->
+    <div class="mb-6">
+      <input id="description" type="text" class="input-field" placeholder="Description">
+      <input id="amount" type="number" class="input-field" placeholder="Amount">
+      <div class="flex space-x-4">
+        <label>
+          <input type="radio" name="type" value="income" class="mr-2"> Income
+        </label>
+        <label>
+          <input type="radio" name="type" value="expense" class="mr-2"> Expense
+        </label>
+      </div>
+      <button id="addButton" class="button">Add Entry</button>
+      <button id="resetButton" class="button reset">Reset</button>
+    </div>
+
+    <!-- Filter -->
+    <div class="mb-6">
+      <label class="mr-2">Filter Entries:</label>
+      <label>
+        <input type="radio" name="filter" value="all" class="mr-2" checked> All
+      </label>
+      <label>
+        <input type="radio" name="filter" value="income" class="mr-2"> Income
+      </label>
+      <label>
+        <input type="radio" name="filter" value="expense" class="mr-2"> Expense
+      </label>
+    </div>
+
+    <!-- Totals -->
+    <div class="total text-center mb-6">
+      <p>Total Income: $<span id="totalIncome">0</span></p>
+      <p>Total Expenses: $<span id="totalExpense">0</span></p>
+      <p>Net Balance: $<span id="netBalance">0</span></p>
+    </div>
+
+    <!-- Entries List -->
+    <ul id="entryList" class="entry-list">
+      <!-- Entries will appear here -->
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
